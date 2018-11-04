@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player-1
+  - name: Player Ring
     uniqueID: 2117070257
     locked: 0
-  - name: Player-2
+  - name: Player Bottom
     uniqueID: 188385431
+    locked: 0
+  - name: Player Weapons
+    uniqueID: 583720905
+    locked: 0
+  - name: Player Weapons 2
+    uniqueID: 3675268857
+    locked: 0
+  - name: Player Top
+    uniqueID: 2939487763
     locked: 0

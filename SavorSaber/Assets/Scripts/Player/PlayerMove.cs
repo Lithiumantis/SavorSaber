@@ -26,8 +26,8 @@ public class PlayerMove : MonoBehaviour {
 	void Update ()
     {
         //get horiz and vert input
-        xInputValue = Input.GetAxis("Horizontal");
-        yInputValue = Input.GetAxis("Vertical");
+        xInputValue = Input.GetAxisRaw("Horizontal");
+        yInputValue = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
