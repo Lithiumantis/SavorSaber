@@ -27,6 +27,7 @@ public class Attack : MonoBehaviour {
 
     private Vector3 spearStart; //has to be global right now for stab to work properly, otherwise they get reset every update loop
     private float spearPower;
+	private float spearLevel = 0;
     private bool longThrow = false; //whether RMB skewers or throws
 
 	void Start ()
@@ -60,7 +61,23 @@ public class Attack : MonoBehaviour {
             if(spearPower > spearMaxDist)
             {
                 spearPower = spearMaxDist;
+				if (spearLevel <= 2) {
+					AudioPlayer.main.playSFX ("sfx_charge_3");
+					spearLevel = 3;
+				}
             }
+			else if (spearPower >= (spearMaxDist / 3) * 2) {
+				if (spearLevel <= 1) {
+					AudioPlayer.main.playSFX ("sfx_charge_2");
+					spearLevel = 2;
+				}
+			}
+			else if (spearPower >= (spearMaxDist / 3)) {
+				if (spearLevel <= 0) {
+					AudioPlayer.main.playSFX ("sfx_charge_1");
+					spearLevel = 1;
+				}
+			}
         }
 
         //either stab or throw on release
@@ -74,6 +91,8 @@ public class Attack : MonoBehaviour {
 
             //get the starting position of spear when beginning a new stab action
             spearStart = spear.transform.localPosition;
+			AudioPlayer.main.playSFX("sfx_throw");
+			spearLevel = 0;
         }
 
         //short stab
@@ -118,6 +137,7 @@ public class Attack : MonoBehaviour {
             print("left click");
             slashing = true;
             targetController.slashing = true;
+			AudioPlayer.main.playSFX("sfx_slash");
         }
 
         //actually do stuff while slashing flag is set
