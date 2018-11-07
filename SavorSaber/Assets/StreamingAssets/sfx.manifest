@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3578809555
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1223449e0f0c47e2d74f0757ec66c376
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audio/SFX/sfx_charge_1.wav
+- Assets/Audio/SFX/sfx_charge_2.wav
+- Assets/Audio/SFX/sfx_charge_3.wav
+- Assets/Audio/SFX/sfx_slash.wav
+- Assets/Audio/SFX/sfx_throw.wav
+Dependencies: []

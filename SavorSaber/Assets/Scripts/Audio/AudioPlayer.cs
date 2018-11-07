@@ -1,0 +1,41 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioPlayer : MonoBehaviour {
+	
+	public static AudioPlayer main = null; // static global ref
+	public bool ready;
+	public AudioSource sfx_source;
+	AssetBundle sfx_bundle;
+
+	void Awake()
+	{
+		DontDestroyOnLoad(transform.gameObject);
+		if (main == null) main = this;
+		else GameObject.Destroy(gameObject); // avoid multiple copies
+		ready = false;
+	}
+
+	// Use this for initialization
+	void Start () {
+		sfx_bundle = AssetBundle.LoadFromFile(System.IO.Path.Combine(Application.streamingAssetsPath, "sfx"));
+		ready = true;
+	}
+
+	// play sfx from name with specified volume modifier (finds first open channel)
+	public void playSFX(string name, float volume = 1.0F)
+	{
+		playSFX(sfx_bundle.LoadAsset<AudioClip>(name), volume);
+	}
+	// play sfx from AudioClip with specified volume modifier (finds first open channel)
+	public void playSFX(AudioClip sfx, float volume = 1.0f)
+	{
+		sfx_source.PlayOneShot(sfx, volume);
+	}
+
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
