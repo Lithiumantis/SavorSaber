@@ -10,7 +10,7 @@ public class Run : MonoBehaviour {
 	private float range;
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		range = Vector2.Distance (transform.position, Player.position);
 
 		if(range < minDist){ 
