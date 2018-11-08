@@ -5,8 +5,8 @@ using UnityEngine;
 public class Run : MonoBehaviour {
 
 	public Transform Player;
-	public int moveSpeed = 3;
-	public int minDist = 5;
+	public float moveSpeed = 3;
+	public float minDist = 5;
 	private float range;
 
 	// Update is called once per frame

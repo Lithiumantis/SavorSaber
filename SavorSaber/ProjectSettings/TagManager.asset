@@ -47,7 +47,7 @@ TagManager:
   - name: Player Bottom
     uniqueID: 188385431
     locked: 0
-  - name: Player Weapons
+  - name: Monsters
     uniqueID: 583720905
     locked: 0
   - name: Player Weapons 2
