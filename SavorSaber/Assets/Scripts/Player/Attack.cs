@@ -20,6 +20,9 @@ public class Attack : MonoBehaviour {
     private SpriteRenderer slashRenderer;
     private SpriteRenderer spearRenderer;
 
+    private CircleCollider2D slashCollider;
+    private CapsuleCollider2D spearCollider;
+
     private float leftMouseInputValue;
     private float rightMouseInputValue;
 
@@ -42,6 +45,8 @@ public class Attack : MonoBehaviour {
         spearRenderer = spear.GetComponent<SpriteRenderer>();
         slashRenderer = slashVisual.GetComponent<SpriteRenderer>();
         targetController = GetComponent<TargetController>();
+        slashCollider = GetComponent<CircleCollider2D>();
+        spearCollider = knife.GetComponent<CapsuleCollider2D>();
     }
 	
 	void FixedUpdate ()
@@ -176,6 +181,15 @@ public class Attack : MonoBehaviour {
         yield return null;
     }
 
-// FUNCTIONS TO ACTUALLY INTERACT WITH ENEMIES
+    // FUNCTIONS TO ACTUALLY INTERACT WITH ENEMIES
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("touching");
+        if(collision.gameObject.tag == "Monster")
+        {
+            Debug.Log("MONSTER SLASHED");
+        }
+    }
 
 }
