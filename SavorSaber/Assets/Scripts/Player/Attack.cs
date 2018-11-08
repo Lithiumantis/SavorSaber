@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//script to be attached to the weapon rig. Gets input for attacks, applies visuals, etc. 
+//will need to be significantly altered when animated sprites are in, but for now it mostly moves a bunch of non-animated sprites around. 
+
 public class Attack : MonoBehaviour {
 
     public GameObject knife;
@@ -30,7 +33,9 @@ public class Attack : MonoBehaviour {
 	private float spearLevel = 0;
     private bool longThrow = false; //whether RMB skewers or throws
 
-	void Start ()
+// MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
+
+    void Start ()
     {
         //get sprite components and target controller script
         knifeRenderer = knife.GetComponent<SpriteRenderer>();
@@ -39,12 +44,13 @@ public class Attack : MonoBehaviour {
         targetController = GetComponent<TargetController>();
     }
 	
-
-	void Update ()
+	void FixedUpdate ()
     {
         StartCoroutine(slash());
         stab();
     }
+
+// MOVE SPRITES WHEN ATTACKING -------------------------------------------------------------------------
 
     void stab()
     {
@@ -110,6 +116,7 @@ public class Attack : MonoBehaviour {
                 spearPower = 0;
             }
         }
+        //long throw
         else if(stabbing && longThrow)
         {
             spear.transform.Translate(thrust * Time.deltaTime);
@@ -126,7 +133,6 @@ public class Attack : MonoBehaviour {
         }
 
     }
-
 
     // coroutines for making a slashing "animation" start and stop when left clicking
     IEnumerator slash()
@@ -155,6 +161,7 @@ public class Attack : MonoBehaviour {
         yield return null;
     }
 
+    //sub-routine for delay when slashing
     IEnumerator executeAfterSeconds(float time)
     {
         yield return new WaitForSeconds(time);
@@ -168,5 +175,7 @@ public class Attack : MonoBehaviour {
 
         yield return null;
     }
+
+// FUNCTIONS TO ACTUALLY INTERACT WITH ENEMIES
 
 }

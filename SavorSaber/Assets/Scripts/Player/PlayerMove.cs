@@ -12,16 +12,12 @@ public class PlayerMove : MonoBehaviour {
     private float yInputValue;
     private Rigidbody2D rigidbody;
 
+// MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
-
-    void Start ()
-    {
-
-	}	
 
 	void Update ()
     {

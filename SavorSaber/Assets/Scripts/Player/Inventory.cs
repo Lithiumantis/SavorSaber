@@ -8,7 +8,9 @@ public class Inventory : MonoBehaviour {
     public Stack<GameObject> skewer2;
     public Stack<GameObject> skewer3;
 
-    // Use this for initialization
+
+// MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
+
     void Start () {
         skewer1 = new Stack<GameObject>();
         skewer2 = new Stack<GameObject>();
