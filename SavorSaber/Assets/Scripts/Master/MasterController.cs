@@ -7,7 +7,7 @@ public class MasterController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //hide cursor during play
-        Cursor.visible = false;
+        //Cursor.visible = false;
 	}
 	
 	// Update is called once per frame

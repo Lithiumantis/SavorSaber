@@ -23,14 +23,18 @@ public class Attack : MonoBehaviour {
     private CircleCollider2D slashCollider;
     private CapsuleCollider2D spearCollider;
 
+    private TargetController targetController;
+
+    private Monster_Kill monsterkill;
+
     private float leftMouseInputValue;
     private float rightMouseInputValue;
 
-    private TargetController targetController;
-
+    //animation controllers
     private bool slashing = false;
     private bool stabbing = false;
 
+    //spear private variables
     private Vector3 spearStart; //has to be global right now for stab to work properly, otherwise they get reset every update loop
     private float spearPower;
 	private float spearLevel = 0;
@@ -192,6 +196,8 @@ public class Attack : MonoBehaviour {
         if (collision.gameObject.tag == "Monster")
         {
             Debug.Log("MONSTER SLASHED");
+            monsterkill = collision.gameObject.GetComponent<Monster_Kill>();
+            monsterkill.KillMonster();
             collision.gameObject.active = false;
         }
     }
