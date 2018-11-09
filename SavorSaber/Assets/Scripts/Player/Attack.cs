@@ -157,6 +157,7 @@ public class Attack : MonoBehaviour {
             knifeRenderer.enabled = false;
             spearRenderer.enabled = false;
             slashRenderer.enabled = true;
+            slashCollider.enabled = true;
 
             slashVisual.transform.RotateAround(slashVisual.transform.position, -1 * slashVisual.transform.forward, Time.deltaTime * rotateSpeed);
 
@@ -177,18 +178,21 @@ public class Attack : MonoBehaviour {
         knifeRenderer.enabled = true;
         spearRenderer.enabled = true;
         slashRenderer.enabled = false;
+        slashCollider.enabled = false;
 
         yield return null;
     }
 
     // FUNCTIONS TO ACTUALLY INTERACT WITH ENEMIES
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("touching");
-        if(collision.gameObject.tag == "Monster")
+
+        if (collision.gameObject.tag == "Monster")
         {
             Debug.Log("MONSTER SLASHED");
+            collision.gameObject.active = false;
         }
     }
 
