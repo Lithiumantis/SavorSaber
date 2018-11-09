@@ -50,10 +50,10 @@ public class Attack : MonoBehaviour {
         slashRenderer = slashVisual.GetComponent<SpriteRenderer>();
         targetController = GetComponent<TargetController>();
         slashCollider = GetComponent<CircleCollider2D>();
-        spearCollider = knife.GetComponent<CapsuleCollider2D>();
+        spearCollider = spear.GetComponent<CapsuleCollider2D>();
     }
 	
-	void FixedUpdate ()
+	void Update ()
     {
         StartCoroutine(slash());
         stab();
@@ -71,7 +71,7 @@ public class Attack : MonoBehaviour {
         {
             //increase power
             spearPower+= 0.2f;
-            print(spearPower);
+            //print(spearPower);
 
             if(spearPower > spearMaxDist)
             {
@@ -101,7 +101,7 @@ public class Attack : MonoBehaviour {
             if (spearPower > stabDistance) { longThrow = true; }
             else                { longThrow = false; }
 
-            print("right click");
+            //print("right click");
             stabbing = true;
 
             //get the starting position of spear when beginning a new stab action
@@ -115,6 +115,9 @@ public class Attack : MonoBehaviour {
         {
             spear.transform.Translate(thrust * Time.deltaTime);
 
+            //enable collision trigger
+            spearCollider.enabled = true;
+
             //stop stab if gone far enough
             if(spear.transform.localPosition.y > spearStart.y + stabDistance)
             {
@@ -123,6 +126,9 @@ public class Attack : MonoBehaviour {
 
                 //reset spear power
                 spearPower = 0;
+
+                //disable trigger
+                spearCollider.enabled = false;
             }
         }
         //long throw
@@ -149,7 +155,7 @@ public class Attack : MonoBehaviour {
         //set slashing flag
         if (Input.GetButtonDown("Fire1") && !slashing && !stabbing)
         {
-            print("left click");
+            //print("left click");
             slashing = true;
             targetController.slashing = true;
 			AudioPlayer.main.playSFX("sfx_slash");
@@ -191,11 +197,11 @@ public class Attack : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("touching");
+        //Debug.Log("touching");
 
         if (collision.gameObject.tag == "Monster")
         {
-            Debug.Log("MONSTER SLASHED");
+            //Debug.Log("MONSTER SLASHED");
             monsterkill = collision.gameObject.GetComponent<Monster_Kill>();
             monsterkill.KillMonster();
             collision.gameObject.active = false;

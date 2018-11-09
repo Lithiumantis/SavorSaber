@@ -6,6 +6,7 @@ public class DropSpawn : MonoBehaviour {
 
     public float maxDrift = 4;
     public float driftSpeed = 1;
+    public string type = "Default";
     private Vector3 target;
 
 	// Use this for initialization

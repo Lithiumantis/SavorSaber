@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114084690801855012}
   m_Layer: 0
   m_Name: LycheeDrop1
-  m_TagString: Untagged
+  m_TagString: Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDrift: 2
   driftSpeed: 1
+  type: Lychee
 --- !u!212 &212176895508308830
 SpriteRenderer:
   m_ObjectHideFlags: 1

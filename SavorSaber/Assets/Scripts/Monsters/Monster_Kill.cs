@@ -19,7 +19,7 @@ public class Monster_Kill : MonoBehaviour {
 
     public void KillMonster()
     {
-        Debug.Log("Monster Killed");
+        //Debug.Log("Monster Killed");
         GameObject dropA = Instantiate(drop, this.transform.position, Quaternion.identity);
         GameObject dropB = Instantiate(drop, this.transform.position, Quaternion.identity);
     }
