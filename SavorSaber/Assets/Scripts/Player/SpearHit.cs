@@ -20,6 +20,7 @@ public class SpearHit : MonoBehaviour {
         {
             Debug.Log("spear hit drop");
 
+			AudioPlayer.main.playSFX ("sfx_stab");
             drop = collision.gameObject.GetComponent<DropSpawn>();
             type = drop.type;
             inventory.addToSkewer(0, type);

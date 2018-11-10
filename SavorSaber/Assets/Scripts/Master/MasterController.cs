@@ -8,6 +8,7 @@ public class MasterController : MonoBehaviour {
 	void Start () {
         //hide cursor during play
         //Cursor.visible = false;
+		AudioPlayer.main.playBGM("stage1", 0.25F);
 	}
 	
 	// Update is called once per frame
