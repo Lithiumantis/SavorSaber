@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50868115015137262}
   - component: {fileID: 114084690801855012}
   m_Layer: 0
-  m_Name: LycheeDrop1
+  m_Name: LycheeDrop3
   m_TagString: Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ SpriteRenderer:
   m_SortingLayerID: 1503279391
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c60c5f621b6e964387c95d4f4e1a586, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 836570beb3c5a4b4fbe1f56875b031ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

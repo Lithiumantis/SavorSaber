@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Items
+    uniqueID: 1503279391
+    locked: 0
   - name: Player Ring
     uniqueID: 2117070257
     locked: 0

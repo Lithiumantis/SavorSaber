@@ -9,48 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1544177378941992}
+  m_RootGameObject: {fileID: 1434221385061638}
   m_IsPrefabAsset: 1
---- !u!1 &1544177378941992
+--- !u!1 &1434221385061638
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4626597789435010}
-  - component: {fileID: 212052844531478114}
-  - component: {fileID: 58239514774953538}
-  - component: {fileID: 50078550436152962}
-  - component: {fileID: 114036851950474628}
-  - component: {fileID: 114223824346527592}
+  - component: {fileID: 4673280645764656}
+  - component: {fileID: 212176895508308830}
+  - component: {fileID: 58790106057640844}
+  - component: {fileID: 50868115015137262}
+  - component: {fileID: 114084690801855012}
   m_Layer: 0
-  m_Name: MonsterLychee
-  m_TagString: Monster
+  m_Name: LycheeDrop2
+  m_TagString: Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4626597789435010
+--- !u!4 &4673280645764656
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
+  m_GameObject: {fileID: 1434221385061638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.49, y: -1.28, z: 0}
+  m_LocalPosition: {x: -9.95, y: -9.96, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50078550436152962
+--- !u!50 &50868115015137262
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
+  m_GameObject: {fileID: 1434221385061638}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,13 +62,13 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!58 &58239514774953538
+  m_Constraints: 0
+--- !u!58 &58790106057640844
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
+  m_GameObject: {fileID: 1434221385061638}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,40 +77,27 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.64
---- !u!114 &114036851950474628
+  m_Radius: 0.1
+--- !u!114 &114084690801855012
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
+  m_GameObject: {fileID: 1434221385061638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5368166154ece246867a28fdad53aa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e73b0d18071143468c12bf6867a141d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  moveSpeed: 3
-  minDist: 5
---- !u!114 &114223824346527592
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b227b63c8be391746a130061cde50827, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  maxDrift: 2
+  driftSpeed: 1
   type: Lychee
-  drop: {fileID: 1434221385061638, guid: 1fbff357b46683a4896239ad90de4d73, type: 2}
---- !u!212 &212052844531478114
+--- !u!212 &212176895508308830
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544177378941992}
+  m_GameObject: {fileID: 1434221385061638}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -138,15 +124,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 583720905
-  m_SortingLayer: 3
+  m_SortingLayerID: 1503279391
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 063e91855fa743748a9032895ba1d524, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4655a4c2becc6c43af8e3e250707b37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.2, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
