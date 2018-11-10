@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50868115015137262}
   - component: {fileID: 114084690801855012}
   m_Layer: 0
-  m_Name: LycheeDrop4
+  m_Name: DropMarsh
   m_TagString: Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

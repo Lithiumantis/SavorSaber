@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Lychee
-  drop: {fileID: 1434221385061638, guid: 1fbff357b46683a4896239ad90de4d73, type: 2}
+  drop: {fileID: 1434221385061638, guid: 50e038c1b9d8f444a986e98cb89403b2, type: 2}
 --- !u!212 &212284876832031470
 SpriteRenderer:
   m_ObjectHideFlags: 1

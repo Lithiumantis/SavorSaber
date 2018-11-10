@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Lychee
-  drop: {fileID: 1434221385061638, guid: 1fbff357b46683a4896239ad90de4d73, type: 2}
+  drop: {fileID: 1434221385061638, guid: 5e7afb1a841ae2e4d9dd3d94670a25e5, type: 2}
 --- !u!114 &114991508567384826
 MonoBehaviour:
   m_ObjectHideFlags: 1
