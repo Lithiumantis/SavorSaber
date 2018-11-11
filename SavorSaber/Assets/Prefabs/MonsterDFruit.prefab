@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4644325455446948}
   - component: {fileID: 212384971116208544}
-  - component: {fileID: 58330694464709142}
   - component: {fileID: 50995383377368110}
   - component: {fileID: 114991508567384826}
   - component: {fileID: 114669695586399970}
   - component: {fileID: 114220202938496606}
+  - component: {fileID: 70234166939662530}
   m_Layer: 0
   m_Name: MonsterDFruit
   m_TagString: Monster
@@ -65,8 +65,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58330694464709142
-CircleCollider2D:
+--- !u!70 &70234166939662530
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -77,9 +77,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Offset: {x: -0.11, y: 0}
+  m_Size: {x: 1.62, y: 2.23}
+  m_Direction: 0
 --- !u!114 &114220202938496606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b227b63c8be391746a130061cde50827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: Lychee
+  type: Dragonfruit
   drop: {fileID: 1434221385061638, guid: 5e7afb1a841ae2e4d9dd3d94670a25e5, type: 2}
 --- !u!114 &114991508567384826
 MonoBehaviour:

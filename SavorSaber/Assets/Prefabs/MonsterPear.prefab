@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4501098482317456}
   - component: {fileID: 212117467006516934}
-  - component: {fileID: 58081234200417378}
   - component: {fileID: 50775917551363498}
   - component: {fileID: 114839825639144430}
   - component: {fileID: 114058745085895698}
+  - component: {fileID: 70247573342952398}
   m_Layer: 0
   m_Name: MonsterPear
   m_TagString: Monster
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58081234200417378
-CircleCollider2D:
+--- !u!70 &70247573342952398
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -77,8 +77,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.26
+  m_Size: {x: 0.67, y: 1}
+  m_Direction: 0
 --- !u!114 &114058745085895698
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4006710337892204}
   - component: {fileID: 212284876832031470}
-  - component: {fileID: 58875043372738874}
   - component: {fileID: 50744737635296706}
   - component: {fileID: 114067139200979750}
   - component: {fileID: 114721766593767912}
+  - component: {fileID: 70953088386322756}
   m_Layer: 0
   m_Name: MonsterMarshmoo
   m_TagString: Monster
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58875043372738874
-CircleCollider2D:
+--- !u!70 &70953088386322756
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,9 +76,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.26
+  m_Offset: {x: 0, y: -0.12}
+  m_Size: {x: 1, y: 0.78}
+  m_Direction: 1
 --- !u!114 &114067139200979750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b227b63c8be391746a130061cde50827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: Lychee
+  type: Marshmallow
   drop: {fileID: 1434221385061638, guid: 50e038c1b9d8f444a986e98cb89403b2, type: 2}
 --- !u!212 &212284876832031470
 SpriteRenderer:
