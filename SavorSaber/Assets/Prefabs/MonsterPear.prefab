@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4501098482317456}
   - component: {fileID: 212117467006516934}
   - component: {fileID: 50775917551363498}
-  - component: {fileID: 114839825639144430}
   - component: {fileID: 114058745085895698}
   - component: {fileID: 70247573342952398}
   m_Layer: 0
@@ -92,20 +91,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Pear
   drop: {fileID: 1434221385061638, guid: 1f60cbddec5cff247b464a0f4a10bbd4, type: 2}
---- !u!114 &114839825639144430
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1736961652614176}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5368166154ece246867a28fdad53aa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  moveSpeed: 3
-  minDist: 5
 --- !u!212 &212117467006516934
 SpriteRenderer:
   m_ObjectHideFlags: 1

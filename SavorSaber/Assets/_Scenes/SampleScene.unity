@@ -663,6 +663,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114607863404295120, guid: c1b39c24312768349ab9437dd112b0e2,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 637351642}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b39c24312768349ab9437dd112b0e2, type: 2}
   m_IsPrefabAsset: 0
@@ -7035,21 +7040,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114040358883288730, guid: 62d82293fd8a38f48a532d40636827a1,
-        type: 2}
-      propertyPath: speed
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 58780734014608624, guid: 62d82293fd8a38f48a532d40636827a1,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 58780734014608624, guid: 62d82293fd8a38f48a532d40636827a1,
-        type: 2}
-      propertyPath: m_Radius
-      value: 1.75
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d82293fd8a38f48a532d40636827a1, type: 2}
   m_IsPrefabAsset: 0
@@ -7101,6 +7091,11 @@ Prefab:
       propertyPath: m_Name
       value: MonsterLychee 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114607863404295120, guid: c1b39c24312768349ab9437dd112b0e2,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 637351642}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b39c24312768349ab9437dd112b0e2, type: 2}
   m_IsPrefabAsset: 0
