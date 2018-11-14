@@ -204,7 +204,7 @@ public class Attack : MonoBehaviour {
             //Debug.Log(collision.gameObject.name);
             monsterkill = collision.gameObject.GetComponent<Monster_Kill>();
             monsterkill.KillMonster(collision.gameObject.name, transform.position);
-			AudioPlayer.main.playSFX ("sfx_damage");
+            AudioPlayer.main.playSFX ("sfx_damage");
             collision.gameObject.active = false;
         }
     }
