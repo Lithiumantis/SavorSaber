@@ -201,9 +201,9 @@ public class Attack : MonoBehaviour {
 
         if (collision.gameObject.tag == "Monster")
         {
-            //Debug.Log("MONSTER SLASHED");
+            //Debug.Log(collision.gameObject.name);
             monsterkill = collision.gameObject.GetComponent<Monster_Kill>();
-            monsterkill.KillMonster();
+            monsterkill.KillMonster(collision.gameObject.name, transform.position);
 			AudioPlayer.main.playSFX ("sfx_damage");
             collision.gameObject.active = false;
         }
