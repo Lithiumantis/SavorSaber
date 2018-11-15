@@ -209,4 +209,7 @@ public class Attack : MonoBehaviour {
         }
     }
 
+	public float GetSpearPower(){
+		return spearPower;
+	}
 }
