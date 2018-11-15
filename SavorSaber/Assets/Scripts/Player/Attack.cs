@@ -162,7 +162,7 @@ public class Attack : MonoBehaviour {
             //print("left click");
             slashing = true;
             targetController.slashing = true;
-			AudioPlayer.main.playSFX("sfx_slash");
+			//AudioPlayer.main.playSFX("sfx_slash");
         }
 
         //actually do stuff while slashing flag is set

@@ -82,7 +82,7 @@ public class PlayerMove : MonoBehaviour {
         rigidbody.MovePosition(rigidbody.position + movement);
     }
 
-	public void PlaySFX(string sfx, float volume = 1.0F){
-		AudioPlayer.main.playSFX(sfx, volume);
+	void PlaySFXSlash(){
+		AudioPlayer.main.playSFX("sfx_slash");
 	}
 }
