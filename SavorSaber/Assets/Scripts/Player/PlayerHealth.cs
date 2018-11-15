@@ -20,8 +20,9 @@ public class PlayerHealth : MonoBehaviour {
 
     public void TakeDamage(int dmg)
     {
-        health--;
-
+        health -= dmg;
+        Debug.Log("Player took " + dmg + " damage!");
+        Debug.Log("Player Health: " + health);
         if(health <= 0)
         {
             Die();
