@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour {
     private float yInputValue;
     private Rigidbody2D rigidbody;
     private Animator anim;
+	public Attack attack_controller;
 
 // MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
@@ -32,34 +33,46 @@ public class PlayerMove : MonoBehaviour {
         yInputValue = Input.GetAxisRaw("Vertical");
         anim.SetFloat("SpeedX", xInputValue);
         anim.SetFloat("SpeedY", yInputValue);
-
     }
 
     private void FixedUpdate()
     {
-        Move();
-        float xLastInput = Input.GetAxisRaw("Horizontal");
-        float yLastInput = Input.GetAxisRaw("Vertical");
-        if(xLastInput != 0 || yLastInput != 0){
-            anim.SetBool("Walking", true);
-            if(xLastInput > 0){
-                anim.SetFloat("LastMoveX", 1f);
-            }else if(xLastInput < 0){
-                anim.SetFloat("LastMoveX", -1f);
-            }else{
-                anim.SetFloat("LastMoveX", 0f);
-            }
+		if (attack_controller.isSlashing () && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking")) {
+			anim.SetBool ("Walking", false);
+			anim.SetBool ("Attacking", true);
+		}
+		else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking") && 
+			anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 &&
+			!anim.IsInTransition(0))
+		{
+			anim.SetBool ("Attacking", false);
+		}
+		else{
+			Move();
+			anim.SetBool ("Attacking", false);
+			float xLastInput = Input.GetAxisRaw ("Horizontal");
+			float yLastInput = Input.GetAxisRaw ("Vertical");
+			if (xLastInput != 0 || yLastInput != 0) {
+				anim.SetBool ("Walking", true);
+				if (xLastInput > 0) {
+					anim.SetFloat ("LastMoveX", 1f);
+				} else if (xLastInput < 0) {
+					anim.SetFloat ("LastMoveX", -1f);
+				} else {
+					anim.SetFloat ("LastMoveX", 0f);
+				}
 
-            if(yLastInput > 0){
-                anim.SetFloat("LastMoveY", 1f);
-            }else if(yLastInput < 0){
-                anim.SetFloat("LastMoveY", -1f);
-            }else{
-                anim.SetFloat("LastMoveY", 0f);
-            }
-        }else{
-            anim.SetBool("Walking", false);
-        }
+				if (yLastInput > 0) {
+					anim.SetFloat ("LastMoveY", 1f);
+				} else if (yLastInput < 0) {
+					anim.SetFloat ("LastMoveY", -1f);
+				} else {
+					anim.SetFloat ("LastMoveY", 0f);
+				}
+			} else {
+				anim.SetBool ("Walking", false);
+			}
+		}
     }
 
     private void Move()
@@ -68,4 +81,8 @@ public class PlayerMove : MonoBehaviour {
         Vector2 movement = new Vector2(xInputValue * speed, yInputValue * speed);
         rigidbody.MovePosition(rigidbody.position + movement);
     }
+
+	public void PlaySFX(string sfx, float volume = 1.0F){
+		AudioPlayer.main.playSFX(sfx, volume);
+	}
 }

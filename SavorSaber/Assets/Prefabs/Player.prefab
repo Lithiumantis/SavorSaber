@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50505314263937172}
   - component: {fileID: 114040358883288730}
   - component: {fileID: 61212833048173664}
+  - component: {fileID: 114016906361720070}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -316,6 +317,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ada34b2457b4a2459cb06afa2f89093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114016906361720070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131967850872488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e39ae87e8d9d4caca050639c761da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114040358883288730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.12
+  attack_controller: {fileID: 0}
 --- !u!114 &114285936782745096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -346,6 +359,7 @@ MonoBehaviour:
   stabDistance: 4
   stabSpeed: 22
   spearMaxDist: 16
+  player_anim: {fileID: 0}
 --- !u!114 &114470049307016916
 MonoBehaviour:
   m_ObjectHideFlags: 1

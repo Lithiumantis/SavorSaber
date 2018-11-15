@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50775917551363498}
   - component: {fileID: 114058745085895698}
   - component: {fileID: 70247573342952398}
+  - component: {fileID: 114065474316178018}
   m_Layer: 0
   m_Name: MonsterPear
   m_TagString: Monster
@@ -91,6 +92,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Pear
   drop: {fileID: 1434221385061638, guid: 1f60cbddec5cff247b464a0f4a10bbd4, type: 2}
+--- !u!114 &114065474316178018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736961652614176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e39ae87e8d9d4caca050639c761da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212117467006516934
 SpriteRenderer:
   m_ObjectHideFlags: 1

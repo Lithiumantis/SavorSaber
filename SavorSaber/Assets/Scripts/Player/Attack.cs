@@ -31,6 +31,7 @@ public class Attack : MonoBehaviour {
     private float rightMouseInputValue;
 
     //animation controllers
+	public Animator player_anim;
     private Animator anim;
     private bool slashing = false;
     private bool stabbing = false;
@@ -53,6 +54,7 @@ public class Attack : MonoBehaviour {
         slashCollider = GetComponent<CircleCollider2D>();
         spearCollider = spear.GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
+		slashCollider.enabled = false;
     }
 	
 	void Update ()
@@ -166,20 +168,22 @@ public class Attack : MonoBehaviour {
         //actually do stuff while slashing flag is set
         if (slashing)
         {
+			
             anim.SetBool("Attacking", true);
-            knifeRenderer.enabled = false;
-            spearRenderer.enabled = false;
-            slashRenderer.enabled = true;
+//            knifeRenderer.enabled = false;
+//            spearRenderer.enabled = false;
+//            slashRenderer.enabled = true;
+			yield return new WaitForSeconds(0.25F);
             slashCollider.enabled = true;
 
             slashVisual.transform.RotateAround(slashVisual.transform.position, -1 * slashVisual.transform.forward, Time.deltaTime * rotateSpeed);
 
-            StartCoroutine(executeAfterSeconds(0.35f));
+            StartCoroutine(executeAfterSeconds(0.01f));
 
         }
         yield return null;
     }
-
+		
     //sub-routine for delay when slashing
     IEnumerator executeAfterSeconds(float time)
     {
@@ -188,9 +192,9 @@ public class Attack : MonoBehaviour {
         slashing = false;
         targetController.slashing = false;
 
-        knifeRenderer.enabled = true;
-        spearRenderer.enabled = true;
-        slashRenderer.enabled = false;
+//        knifeRenderer.enabled = true;
+//        spearRenderer.enabled = true;
+//        slashRenderer.enabled = false;
         slashCollider.enabled = false;
         // anim.SetBool("Attacking", false);
         yield return null;
@@ -212,4 +216,10 @@ public class Attack : MonoBehaviour {
         }
     }
 
+	// Misc.
+
+	public bool isSlashing()
+	{
+		return slashing;
+	}
 }

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50643950323435512}
   - component: {fileID: 114607863404295120}
   - component: {fileID: 114882667334902682}
+  - component: {fileID: 114814065384526344}
   m_Layer: 0
   m_Name: MonsterLychee 1
   m_TagString: Monster
@@ -93,6 +94,17 @@ MonoBehaviour:
   Player: {fileID: 0}
   moveSpeed: 3
   minDist: 5
+--- !u!114 &114814065384526344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653262139736286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e39ae87e8d9d4caca050639c761da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114882667334902682
 MonoBehaviour:
   m_ObjectHideFlags: 1
