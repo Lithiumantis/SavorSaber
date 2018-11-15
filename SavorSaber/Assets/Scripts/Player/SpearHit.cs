@@ -5,8 +5,10 @@ using UnityEngine;
 public class SpearHit : MonoBehaviour {
 
     private string type;
+    private Texture2D sprite;
     private Inventory inventory;
     private DropSpawn drop;
+    private DropClass dropClass;
 
     private void Start()
     {
@@ -21,9 +23,11 @@ public class SpearHit : MonoBehaviour {
             Debug.Log("spear hit drop");
 
 			AudioPlayer.main.playSFX ("sfx_stab");
+
             drop = collision.gameObject.GetComponent<DropSpawn>();
-            type = drop.type;
-            inventory.addToSkewer(0, type);
+            dropClass = drop.dropClass;
+
+            inventory.AddToSkewer(0, dropClass);
             collision.gameObject.active = false;
         }
         

@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class DropSpawn : MonoBehaviour {
 
+    //movement values
     public float maxDrift = 4;
     public float driftSpeed = 1;
+
+    //drop-specific data
+    //set on a per-prefab basis in the Inspector
     public string type = "Default";
+    public Texture2D sprite = null;
+
+    public DropClass dropClass;
+
     private Vector3 target;
 
 	// Use this for initialization
@@ -18,6 +26,10 @@ public class DropSpawn : MonoBehaviour {
         float z = transform.position.z + Random.Range(-maxDrift, maxDrift);
 
         target = new Vector3(x, y, z);
+
+        //pack all relevant data into a class so it can be added to the player's inventory stack as a single object
+        dropClass.type = type;
+        dropClass.sprite = sprite;
 
     }
 	
