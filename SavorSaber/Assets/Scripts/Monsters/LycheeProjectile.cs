@@ -33,7 +33,7 @@ public class LycheeProjectile : MonoBehaviour {
         {
             //Register hit and damage player
             GameObject Player = hit.gameObject;
-            Player.GetComponent<PlayerHealth>().TakeDamage(damage);
+            Player.GetComponentInChildren<PlayerHealth>().TakeDamage(damage);
             destroyProjectile();
         }else if (hit.gameObject.tag == "Wall" && timer > 0.5f)
         {
