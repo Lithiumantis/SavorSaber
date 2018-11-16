@@ -12,6 +12,7 @@ public class DropSpawn : MonoBehaviour {
     //set on a per-prefab basis in the Inspector
     public string type = "Default";
     public Texture2D sprite = null;
+    public int healValue = 1;
 
     public DropClass dropClass;
 
@@ -30,6 +31,7 @@ public class DropSpawn : MonoBehaviour {
         //pack all relevant data into a class so it can be added to the player's inventory stack as a single object
         dropClass.type = type;
         dropClass.sprite = sprite;
+        dropClass.healValue = healValue;
 
     }
 	

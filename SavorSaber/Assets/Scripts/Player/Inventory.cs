@@ -8,47 +8,63 @@ public class Inventory : MonoBehaviour {
     public Stack<DropClass> skewer1;
     public Stack<DropClass> skewer2;
 
-
+    private int currentSkewer = 0;
+    private Stack<DropClass>[] quiver = new Stack<DropClass>[3];
 // MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
     void Start () {
-        skewer0 = new Stack<DropClass>();
-        skewer1 = new Stack<DropClass>();
-        skewer2 = new Stack<DropClass>();
+        quiver[0] = new Stack<DropClass>();
+        quiver[1] = new Stack<DropClass>();
+        quiver[2] = new Stack<DropClass>();
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+        //healing
+        if (Input.GetButtonDown("Heal"))
+        {
+            Heal(currentSkewer);
+        }
+
 	}
 
     public void AddToSkewer(int num, DropClass dropClass)
     {
-        if(num == 0)
+        if(num >= 0 && num <= 2)
         {
-            skewer0.Push(dropClass);
+            quiver[num].Push(dropClass);
             Debug.Log("Added to skewer. Current status: ");
-            foreach (DropClass item in skewer0) { print(item); }
-        }
-        else if(num == 1)
-        {
-            skewer1.Push(dropClass);
-            Debug.Log("Added to skewer. Current status: ");
-            foreach(DropClass item in skewer1) { print(item); }
-        }
-        else if(num == 2)
-        {
-            skewer2.Push(dropClass);
-            Debug.Log("Added to skewer. Current status: ");
-            foreach (DropClass item in skewer2) { print(item); }
+            foreach (DropClass item in quiver[num]) { print(item); }
         }
         else
         {
-            Debug.Log("ERROR: INVALID SKEWER INDEX");
+            Debug.Log("Error: Invalid skewer number");
         }
+    }
 
-        
+    private void Heal(int num)
+    {
+        DropClass topItem;
+        PlayerHealth health = GetComponent<PlayerHealth>();
 
+        //do nothing if skewer is empty
+        if(quiver[num].Count <= 0)
+        {
+            Debug.Log("Cannot heal with empty skewer");
+            return;
+        }
+        //pop each item off the stack and use its value to heal, but don't let the player eat if they're already full      
+        while(quiver[num].Count > 0)
+        {
+
+            if (health.health < health.maxHealth)
+            {
+                topItem = quiver[num].Pop();
+                health.Heal(topItem.healValue);
+            }
+                
+        }
     }
 }

@@ -5,17 +5,15 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour {
 
     public int maxHealth = 10;
-    private int health;
+    public int health;
 
 
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+        //use this to test healing mechanics 
+        //health = 5;
 	}
 
     public void TakeDamage(int dmg)
@@ -39,5 +37,17 @@ public class PlayerHealth : MonoBehaviour {
         Debug.Log("Player dead");
 
         //whatever we want to happen on death. Animations, etc. Respawn? 
+    }
+
+    public void Heal(int addedHealth)
+    {
+        health += addedHealth;
+        
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+
+        Debug.Log("healed to " + health);
     }
 }
