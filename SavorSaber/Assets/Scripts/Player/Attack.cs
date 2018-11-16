@@ -31,6 +31,7 @@ public class Attack : MonoBehaviour {
     private float rightMouseInputValue;
 
     //animation controllers
+    private Animator anim;
     private bool slashing = false;
     private bool stabbing = false;
 
@@ -51,6 +52,7 @@ public class Attack : MonoBehaviour {
         targetController = GetComponent<TargetController>();
         slashCollider = GetComponent<CircleCollider2D>();
         spearCollider = spear.GetComponent<CapsuleCollider2D>();
+        anim = GetComponent<Animator>();
     }
 	
 	void Update ()
@@ -164,6 +166,7 @@ public class Attack : MonoBehaviour {
         //actually do stuff while slashing flag is set
         if (slashing)
         {
+            anim.SetBool("Attacking", true);
             knifeRenderer.enabled = false;
             spearRenderer.enabled = false;
             slashRenderer.enabled = true;
@@ -189,7 +192,7 @@ public class Attack : MonoBehaviour {
         spearRenderer.enabled = true;
         slashRenderer.enabled = false;
         slashCollider.enabled = false;
-
+        // anim.SetBool("Attacking", false);
         yield return null;
     }
 
