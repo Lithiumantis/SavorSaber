@@ -6369,19 +6369,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &637351647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 637351640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f9c64dfe77258d49af2347aa0f1e59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  health: 0
 --- !u!1001 &651889460
 Prefab:
   m_ObjectHideFlags: 0
@@ -7508,7 +7495,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1464819550466258, guid: 62d82293fd8a38f48a532d40636827a1, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114470049307016916, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
@@ -7547,7 +7534,7 @@ Prefab:
     - target: {fileID: 58780734014608624, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1363059158218276, guid: 62d82293fd8a38f48a532d40636827a1, type: 2}
       propertyPath: m_IsActive
@@ -7557,6 +7544,11 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114253688976164338, guid: 62d82293fd8a38f48a532d40636827a1,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1352340307}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d82293fd8a38f48a532d40636827a1, type: 2}
   m_IsPrefabAsset: 0

@@ -20,7 +20,8 @@ public class DFruitAttack : MonoBehaviour {
             //InvokeRepeating(Player.GetComponent<PlayerHealth>().TakeDamage(attackDamage), 0.1f, attackDelay);
             if (Time.time > lastAttackTime + attackDelay)
             {
-                Player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+                Player.GetComponentInChildren<PlayerHealth>().TakeDamage(attackDamage);
+
             }
         }
     }
