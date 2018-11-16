@@ -63,6 +63,6 @@ public class PlayerHealth : MonoBehaviour {
 
     private void UpdateUI()
     {
-        slider.value = health;
+        slider.value = maxHealth - health;
     }
 }
