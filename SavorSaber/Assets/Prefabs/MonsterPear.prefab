@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50775917551363498}
   - component: {fileID: 114058745085895698}
   - component: {fileID: 70247573342952398}
+  - component: {fileID: 95095290870711630}
   m_Layer: 0
   m_Name: MonsterPear
   m_TagString: Monster
@@ -78,6 +79,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.67, y: 1}
   m_Direction: 0
+--- !u!95 &95095290870711630
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736961652614176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b95cafd55a88b0f4287a1fbb62ef69a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114058745085895698
 MonoBehaviour:
   m_ObjectHideFlags: 1
