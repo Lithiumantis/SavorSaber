@@ -9,7 +9,7 @@ public class DFruitAttack : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        lastAttackTime = 0;
 	}
 	
     private void OnCollisionEnter2D(Collision2D collision)
