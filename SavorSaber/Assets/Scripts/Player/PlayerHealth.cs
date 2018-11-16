@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour {
         health = maxHealth;
 
         //use this to test healing mechanics 
-        //health = 5;
+        health = 5;
 	}
 
     public void TakeDamage(int dmg)
