@@ -6750,8 +6750,8 @@ MonoBehaviour:
   m_RefResolutionY: 360
   m_UpscaleRT: 0
   m_PixelSnapping: 1
-  m_CropFrameX: 1
-  m_CropFrameY: 1
+  m_CropFrameX: 0
+  m_CropFrameY: 0
   m_StretchFill: 0
 --- !u!1 &983117548
 GameObject:
@@ -7878,7 +7878,7 @@ Canvas:
   m_GameObject: {fileID: 1967843731}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 948934852}
   m_PlaneDistance: 32
   m_PixelPerfect: 1
