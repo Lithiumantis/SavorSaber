@@ -49,22 +49,22 @@ public class Inventory : MonoBehaviour {
         DropClass topItem;
         PlayerHealth health = GetComponent<PlayerHealth>();
 
-        //do nothing if skewer is empty
+        //do nothing if skewer is empty or hp is full
         if(quiver[num].Count <= 0)
         {
             Debug.Log("Cannot heal with empty skewer");
             return;
+        }else if(health.health == health.maxHealth){
+            Debug.Log("Health max");
+            return;
         }
         //pop each item off the stack and use its value to heal, but don't let the player eat if they're already full      
-        while(quiver[num].Count > 0)
+        
+        while(quiver[num].Count > 0 && health.health < health.maxHealth)
         {
-
-            if (health.health < health.maxHealth)
-            {
                 topItem = quiver[num].Pop();
-                health.Heal(topItem.healValue);
-            }
-                
+                health.Heal(topItem.healValue);             
         }
+        
     }
 }
