@@ -219,16 +219,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114839825639144430, guid: 1299c97dd4892ed4787babb46eee30d7,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 637351642}
-    - target: {fileID: 95095290870711630, guid: 1299c97dd4892ed4787babb46eee30d7,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1299c97dd4892ed4787babb46eee30d7, type: 2}
   m_IsPrefabAsset: 0
@@ -1082,7 +1072,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6721,7 +6711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &948934851
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6811,8 +6801,8 @@ MonoBehaviour:
   m_RefResolutionY: 360
   m_UpscaleRT: 0
   m_PixelSnapping: 1
-  m_CropFrameX: 1
-  m_CropFrameY: 1
+  m_CropFrameX: 0
+  m_CropFrameY: 0
   m_StretchFill: 0
 --- !u!1 &983117548
 GameObject:
@@ -7458,17 +7448,17 @@ Prefab:
     - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212133396875899888, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
@@ -7561,7 +7551,7 @@ Prefab:
     - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.33333334
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 212133396875899888, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
@@ -7576,6 +7566,16 @@ Prefab:
     - target: {fileID: 212133396875899888, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61212833048173664, guid: 62d82293fd8a38f48a532d40636827a1,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
