@@ -11,7 +11,7 @@ public class DropSpawn : MonoBehaviour {
     //drop-specific data
     //set on a per-prefab basis in the Inspector
     public string type = "Default";
-    public Texture2D sprite = null;
+    public Sprite sprite = null;
     public int healValue = 1;
 
     public DropClass dropClass;

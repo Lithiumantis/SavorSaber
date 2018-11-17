@@ -18,7 +18,7 @@ public class SpearHit : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Drop")
+        if(collision.gameObject.tag == "Drop" && !inventory.CurrentSkewerFull())
         {
             Debug.Log("spear hit drop");
 

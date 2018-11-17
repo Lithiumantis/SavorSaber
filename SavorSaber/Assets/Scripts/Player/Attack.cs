@@ -183,10 +183,10 @@ public class Attack : MonoBehaviour {
         if (slashing)
         {
             // anim.SetBool("Attacking", true);
-            // knifeRenderer.enabled = false;
+             knifeRenderer.enabled = false;
             spearRenderer.enabled = false;
-            // slashRenderer.enabled = true;
-            // slashCollider.enabled = true;
+             slashRenderer.enabled = true;
+             slashCollider.enabled = true;
 
             slashVisual.transform.RotateAround(slashVisual.transform.position, -1 * slashVisual.transform.forward, Time.deltaTime * rotateSpeed);
 
@@ -204,9 +204,15 @@ public class Attack : MonoBehaviour {
         slashing = false;
         targetController.slashing = false;
 
+<<<<<<< HEAD
         // knifeRenderer.enabled = true;
         // spearRenderer.enabled = true;
         // slashRenderer.enabled = false;
+=======
+         knifeRenderer.enabled = true;
+        spearRenderer.enabled = true;
+         slashRenderer.enabled = false;
+>>>>>>> 9ef018f1ec32bbbe7607144dde2b37258e591146
         slashCollider.enabled = false;
         otheranim.SetBool("Attacking", false);
 
