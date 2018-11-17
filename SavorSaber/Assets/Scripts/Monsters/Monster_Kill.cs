@@ -20,6 +20,7 @@ public class Monster_Kill : MonoBehaviour {
     public void KillMonster()
     {
         //Debug.Log("Monster Killed");
+        AudioPlayer.main.playSFX("vo_fruit_rip");
         GameObject dropA = Instantiate(drop, this.transform.position, Quaternion.identity);
         GameObject dropB = Instantiate(drop, this.transform.position, Quaternion.identity);
     }

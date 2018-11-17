@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2930053139
+CRC: 3153056777
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18e1e7981448ffde1c1452f2c87f77e7
+    Hash: 72a516f8ca0a229db241a35a38af8748
   TypeTreeHash:
     serializedVersion: 2
     Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
@@ -12,8 +12,12 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 Assets:
+- Assets/Audio/SFX/sfx_cronch.wav
 - Assets/Audio/SFX/sfx_charge_1.wav
 - Assets/Audio/SFX/sfx_charge_2.wav
+- Assets/Audio/SFX/vo_fruit_rip.wav
+- Assets/Audio/SFX/sfx_heal.wav
+- Assets/Audio/SFX/vo_fruit_hiya.wav
 - Assets/Audio/SFX/sfx_stab.wav
 - Assets/Audio/SFX/sfx_damage.wav
 - Assets/Audio/SFX/sfx_charge_3.wav

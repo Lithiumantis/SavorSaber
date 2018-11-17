@@ -33,6 +33,7 @@ public class LycheeAttack : MonoBehaviour {
             //Debug.Log("Angle: " + angle);
             //Create projectile of type projectile, at current lychee position, with rotation info in quaternion q
             Instantiate(projectile, transform.position, q);
+            AudioPlayer.main.playSFX("vo_fruit_hiya");
             //Reset timer
             attackTimer = cooldown;
         }

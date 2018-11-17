@@ -26,6 +26,8 @@ public class PlayerHealth : MonoBehaviour {
         health -= dmg;
         UpdateUI();
 
+        AudioPlayer.main.playSFX("sfx_damage");
+
         Debug.Log("Player took " + dmg + " damage!");
         Debug.Log("Player Health: " + health);
         if(health <= 0)
@@ -52,6 +54,7 @@ public class PlayerHealth : MonoBehaviour {
         health += addedHealth;
         UpdateUI();
 
+        AudioPlayer.main.playSFX("sfx_heal");
 
         if (health > maxHealth)
         {
