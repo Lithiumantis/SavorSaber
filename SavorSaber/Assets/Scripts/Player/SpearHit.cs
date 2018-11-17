@@ -20,15 +20,19 @@ public class SpearHit : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Drop")
         {
-            Debug.Log("spear hit drop");
+            if (!inventory.CurrentSkewerFull())
+            {
+                //Debug.Log("spear hit drop");
 
-			AudioPlayer.main.playSFX ("sfx_stab");
+                AudioPlayer.main.playSFX("sfx_stab");
 
-            drop = collision.gameObject.GetComponent<DropSpawn>();
-            dropClass = drop.dropClass;
+                drop = collision.gameObject.GetComponent<DropSpawn>();
+                dropClass = drop.dropClass;
 
-            inventory.AddToSkewer(0, dropClass);
-            collision.gameObject.active = false;
+                inventory.AddToSkewer(0, dropClass);
+                collision.gameObject.active = false;
+            }
+            
         }
         
     }

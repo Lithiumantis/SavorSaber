@@ -38,13 +38,18 @@ public class Inventory : MonoBehaviour {
 
 	}
 
+    public bool CurrentSkewerFull()
+    {
+        return (quiver[currentSkewerNum].Count == 5);
+    }
+
     public void AddToSkewer(int num, DropClass dropClass)
     {
         if(num >= 0 && num <= 2)
         {
             quiver[num].Push(dropClass);
-            Debug.Log("Added to skewer. Current status: ");
-            foreach (DropClass item in quiver[num]) { print(item); }
+            //Debug.Log("Added to skewer. Current status: ");
+            //foreach (DropClass item in quiver[num]) { print(item); }
 
             UpdateSkewerVisual();
         }
@@ -83,12 +88,18 @@ public class Inventory : MonoBehaviour {
     private void UpdateSkewerVisual()
     {
         DropClass[] dropArray = quiver[currentSkewerNum].ToArray();
+        DropClass[] reverseArray = new DropClass[dropArray.Length];
+        for(int a = 0; a < dropArray.Length; a++)
+        {
+            reverseArray[a] = dropArray[dropArray.Length - (a + 1)];
+        }
+        dropArray = reverseArray;
+
         for (int i = 0; i < maxItemsPerSkewer; i++)
         {
             if(i < dropArray.Length)
             {
-                //temp stack
-
+                print("showing " + dropArray[i].type + " at index " + i);
                 skewerSprites[i].sprite = dropArray[i].sprite;
             }
             else
@@ -97,4 +108,5 @@ public class Inventory : MonoBehaviour {
             }
         }
     }
+
 }
