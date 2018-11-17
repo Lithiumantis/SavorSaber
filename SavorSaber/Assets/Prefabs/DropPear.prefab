@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1434221385061638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.03, y: -3.89, z: 0}
+  m_LocalPosition: {x: -0.80437946, y: -17.962706, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -92,6 +92,12 @@ MonoBehaviour:
   maxDrift: 2
   driftSpeed: 1
   type: Pear
+  sprite: {fileID: 21300000, guid: d4655a4c2becc6c43af8e3e250707b37, type: 3}
+  healValue: 1
+  dropClass:
+    type: Default
+    sprite: {fileID: 0}
+    healValue: 1
 --- !u!212 &212176895508308830
 SpriteRenderer:
   m_ObjectHideFlags: 1
