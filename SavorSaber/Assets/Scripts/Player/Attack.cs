@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //script to be attached to the weapon rig. Gets input for attacks, applies visuals, etc. 
 //will need to be significantly altered when animated sprites are in, but for now it mostly moves a bunch of non-animated sprites around. 
@@ -15,6 +16,9 @@ public class Attack : MonoBehaviour {
     public float stabDistance = 4f;
     public float stabSpeed = 10f;
     public float spearMaxDist = 16f;
+
+    public Slider slider;
+    public Image sliderFill;
 
     private SpriteRenderer knifeRenderer;
     private SpriteRenderer slashRenderer;
@@ -59,6 +63,7 @@ public class Attack : MonoBehaviour {
     {
         StartCoroutine(slash());
         stab();
+        UpdateUI();
     }
 
 // MOVE SPRITES WHEN ATTACKING -------------------------------------------------------------------------
@@ -209,6 +214,29 @@ public class Attack : MonoBehaviour {
             monsterkill.KillMonster();
 			AudioPlayer.main.playSFX ("sfx_damage");
             collision.gameObject.active = false;
+        }
+    }
+
+    // UPDATE POW GAUGE
+
+    private void UpdateUI()
+    {
+        slider.value = (spearPower / spearMaxDist);
+        if (spearLevel <= 0)
+        {
+            sliderFill.color = new Color32(89, 69, 109, 255);
+        }
+        else if (spearLevel == 1)
+        {
+            sliderFill.color = new Color32(135,84,138,255);
+        }
+        else if (spearLevel == 2)
+        {
+            sliderFill.color = new Color32(161, 145, 177, 255);
+        }
+        else if (spearLevel == 3)
+        {
+            sliderFill.color = new Color32(109, 110, 219, 255);
         }
     }
 
