@@ -10,6 +10,7 @@ public class Attack : MonoBehaviour {
     public GameObject knife;
     public GameObject spear;
     public GameObject slashVisual;
+    public GameObject player;
 
     public float rotateSpeed = 1400f;
     public float stabDistance = 4f;
@@ -31,7 +32,7 @@ public class Attack : MonoBehaviour {
     private float rightMouseInputValue;
 
     //animation controllers
-    private Animator anim;
+    Animator otheranim;
     private bool slashing = false;
     private bool stabbing = false;
 
@@ -52,7 +53,11 @@ public class Attack : MonoBehaviour {
         targetController = GetComponent<TargetController>();
         slashCollider = GetComponent<CircleCollider2D>();
         spearCollider = spear.GetComponent<CapsuleCollider2D>();
-        anim = GetComponent<Animator>();
+        // anim = GetComponent<Animator>();
+    }
+
+    void Awake() {
+            otheranim = player.GetComponent<Animator>();
     }
 	
 	void Update ()
@@ -105,6 +110,7 @@ public class Attack : MonoBehaviour {
 
             //print("right click");
             stabbing = true;
+            otheranim.SetBool("Lunging", true);
 
             //get the starting position of spear when beginning a new stab action
             spearStart = spear.transform.localPosition;
@@ -132,6 +138,7 @@ public class Attack : MonoBehaviour {
                 //disable trigger
                 spearCollider.enabled = false;
             }
+            otheranim.SetBool("Lunging", false);
         }
         //long throw
         else if(stabbing && longThrow)
@@ -147,6 +154,7 @@ public class Attack : MonoBehaviour {
                 //reset spear power
                 spearPower = 0;
             }
+            otheranim.SetBool("Throwing", false);
         }
 
     }
@@ -160,17 +168,18 @@ public class Attack : MonoBehaviour {
             //print("left click");
             slashing = true;
             targetController.slashing = true;
+            otheranim.SetBool("Attacking", true);
 			AudioPlayer.main.playSFX("sfx_slash");
         }
 
         //actually do stuff while slashing flag is set
         if (slashing)
         {
-            anim.SetBool("Attacking", true);
-            knifeRenderer.enabled = false;
+            // anim.SetBool("Attacking", true);
+            // knifeRenderer.enabled = false;
             spearRenderer.enabled = false;
-            slashRenderer.enabled = true;
-            slashCollider.enabled = true;
+            // slashRenderer.enabled = true;
+            // slashCollider.enabled = true;
 
             slashVisual.transform.RotateAround(slashVisual.transform.position, -1 * slashVisual.transform.forward, Time.deltaTime * rotateSpeed);
 
@@ -188,11 +197,11 @@ public class Attack : MonoBehaviour {
         slashing = false;
         targetController.slashing = false;
 
-        knifeRenderer.enabled = true;
+        // knifeRenderer.enabled = true;
         spearRenderer.enabled = true;
-        slashRenderer.enabled = false;
+        // slashRenderer.enabled = false;
         slashCollider.enabled = false;
-        // anim.SetBool("Attacking", false);
+        otheranim.SetBool("Attacking", false);
         yield return null;
     }
 
