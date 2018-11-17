@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
@@ -8,8 +9,16 @@ public class Inventory : MonoBehaviour {
     public Stack<DropClass> skewer1;
     public Stack<DropClass> skewer2;
 
-    private int currentSkewer = 0;
+    public Canvas canvas = null;
+    public int maxItemsPerSkewer = 5;
+    public Image[] skewerSprites = new Image[5];
+    public Sprite emptySprite;
+
+
+
+    private int currentSkewerNum = 0;
     private Stack<DropClass>[] quiver = new Stack<DropClass>[3];
+
 // MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
     void Start () {
@@ -18,14 +27,13 @@ public class Inventory : MonoBehaviour {
         quiver[2] = new Stack<DropClass>();
 
     }
-	
-	// Update is called once per frame
+
 	void Update () {
 
         //healing
         if (Input.GetButtonDown("Heal"))
         {
-            Heal(currentSkewer);
+            Heal();
         }
 
 	}
@@ -37,6 +45,8 @@ public class Inventory : MonoBehaviour {
             quiver[num].Push(dropClass);
             Debug.Log("Added to skewer. Current status: ");
             foreach (DropClass item in quiver[num]) { print(item); }
+
+            UpdateSkewerVisual();
         }
         else
         {
@@ -44,13 +54,13 @@ public class Inventory : MonoBehaviour {
         }
     }
 
-    private void Heal(int num)
+    private void Heal()
     {
         DropClass topItem;
         PlayerHealth health = GetComponent<PlayerHealth>();
 
         //do nothing if skewer is empty or hp is full
-        if(quiver[num].Count <= 0)
+        if(quiver[currentSkewerNum].Count <= 0)
         {
             Debug.Log("Cannot heal with empty skewer");
             return;
@@ -60,11 +70,31 @@ public class Inventory : MonoBehaviour {
         }
         //pop each item off the stack and use its value to heal, but don't let the player eat if they're already full      
         
-        while(quiver[num].Count > 0 && health.health < health.maxHealth)
+        while(quiver[currentSkewerNum].Count > 0 && health.health < health.maxHealth)
         {
-                topItem = quiver[num].Pop();
+                topItem = quiver[currentSkewerNum].Pop();
                 health.Heal(topItem.healValue);             
         }
-        
+        UpdateSkewerVisual();
+
+
+    }
+
+    private void UpdateSkewerVisual()
+    {
+        DropClass[] dropArray = quiver[currentSkewerNum].ToArray();
+        for (int i = 0; i < maxItemsPerSkewer; i++)
+        {
+            if(i < dropArray.Length)
+            {
+                //temp stack
+
+                skewerSprites[i].sprite = dropArray[i].sprite;
+            }
+            else
+            {
+                skewerSprites[i].sprite = emptySprite;
+            }
+        }
     }
 }
