@@ -105,15 +105,17 @@ public class Attack : MonoBehaviour {
         //either stab or throw on release
         if(Input.GetButtonUp("Fire2") && !slashing && !stabbing)
         {
-            if (spearPower > stabDistance) { longThrow = true; }
-            else                { longThrow = false; }
+            if (spearPower > stabDistance) { print("throw"); otheranim.SetBool("Throwing", true); longThrow = true; }
+            else                { longThrow = false; otheranim.SetBool("Lunging", true); }
 
             //print("right click");
             stabbing = true;
-            otheranim.SetBool("Lunging", true);
 
             //get the starting position of spear when beginning a new stab action
             spearStart = spear.transform.localPosition;
+            print("what");
+            print(spearStart);
+            print("test");
 			AudioPlayer.main.playSFX("sfx_throw");
 			spearLevel = 0;
         }
@@ -121,6 +123,7 @@ public class Attack : MonoBehaviour {
         //short stab
         if (stabbing && !longThrow)
         {
+            otheranim.SetBool("Lunging", true);
             spear.transform.Translate(thrust * Time.deltaTime);
 
             //enable collision trigger
@@ -137,12 +140,14 @@ public class Attack : MonoBehaviour {
 
                 //disable trigger
                 spearCollider.enabled = false;
+                otheranim.SetBool("Lunging", false);
             }
-            otheranim.SetBool("Lunging", false);
         }
         //long throw
         else if(stabbing && longThrow)
         {
+            otheranim.SetBool("Throwing", true);
+            spearRenderer.enabled = true;
             spear.transform.Translate(thrust * Time.deltaTime);
 
             //stop stab if gone far enough
@@ -150,11 +155,13 @@ public class Attack : MonoBehaviour {
             {
                 stabbing = false;
                 spear.transform.localPosition = spearStart;
+                spearRenderer.enabled = false;
+
 
                 //reset spear power
                 spearPower = 0;
+                otheranim.SetBool("Throwing", false);
             }
-            otheranim.SetBool("Throwing", false);
         }
 
     }
@@ -198,10 +205,11 @@ public class Attack : MonoBehaviour {
         targetController.slashing = false;
 
         // knifeRenderer.enabled = true;
-        spearRenderer.enabled = true;
+        // spearRenderer.enabled = true;
         // slashRenderer.enabled = false;
         slashCollider.enabled = false;
         otheranim.SetBool("Attacking", false);
+
         yield return null;
     }
 
