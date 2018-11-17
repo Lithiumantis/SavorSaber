@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Monster
+  - Drop
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -38,8 +41,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1310225117
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Items
+    uniqueID: 1503279391
     locked: 0
   - name: Player Ring
     uniqueID: 2117070257
@@ -47,7 +56,7 @@ TagManager:
   - name: Player Bottom
     uniqueID: 188385431
     locked: 0
-  - name: Player Weapons
+  - name: Monsters
     uniqueID: 583720905
     locked: 0
   - name: Player Weapons 2
@@ -55,4 +64,7 @@ TagManager:
     locked: 0
   - name: Player Top
     uniqueID: 2939487763
+    locked: 0
+  - name: UI
+    uniqueID: 1518505345
     locked: 0

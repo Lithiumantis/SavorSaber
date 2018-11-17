@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+//script that handles the rotation of the player's weapon rid
+//this will be obsolete once animated sprites are added. 
 
 public class TargetController : MonoBehaviour {
 

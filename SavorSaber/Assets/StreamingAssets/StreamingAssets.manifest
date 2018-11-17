@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 4074750511
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: sfx
+      Dependencies: {}
+    Info_1:
+      Name: bgm
+      Dependencies: {}
