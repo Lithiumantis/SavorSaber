@@ -7571,11 +7571,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114253688976164338, guid: 62d82293fd8a38f48a532d40636827a1,
-        type: 2}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1352340307}
     - target: {fileID: 114470049307016916, guid: 62d82293fd8a38f48a532d40636827a1,
         type: 2}
       propertyPath: skewerSprites.Array.data[0]
@@ -7601,6 +7596,11 @@ Prefab:
       propertyPath: skewerSprites.Array.data[4]
       value: 
       objectReference: {fileID: 1799376084}
+    - target: {fileID: 114253688976164338, guid: 62d82293fd8a38f48a532d40636827a1,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1352340307}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d82293fd8a38f48a532d40636827a1, type: 2}
   m_IsPrefabAsset: 0
