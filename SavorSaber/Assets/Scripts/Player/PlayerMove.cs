@@ -42,7 +42,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (Timer.timeLeft < 0.2)
+        if (Timer.timeLeft < 0.2 || PlayerHealth.isDead)
         {
             TransformBack();
         }else if (Timer.timeLeft > 0.5)
