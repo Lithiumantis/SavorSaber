@@ -8,14 +8,15 @@ public class Timer : MonoBehaviour {
     public static float timeLeft;
     Text text;
     
-    private void Awake()
+    void Awake()
     {
         text = GetComponent<Text>();
         timeLeft = 30.0f;
     }
 
     
-    void Update () {
+    void Update ()
+    {
        
 
         if (timeLeft < 0)
