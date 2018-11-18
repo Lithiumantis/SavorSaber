@@ -214,7 +214,7 @@ public class Attack : MonoBehaviour {
         targetController.slashing = false;
 
         //knifeRenderer.enabled = true;
-        spearRenderer.enabled = true;
+        // spearRenderer.enabled = true;
         //slashRenderer.enabled = false;
         slashCollider.enabled = false;
         otheranim.SetBool("Attacking", false);
