@@ -8447,15 +8447,12 @@ RectTransform:
   - {fileID: 177221140}
   - {fileID: 1339842872}
   - {fileID: 1352340306}
-<<<<<<< HEAD
   - {fileID: 2129069127}
   - {fileID: 979247753}
   - {fileID: 505811671}
   - {fileID: 1621664492}
   - {fileID: 954172490}
-=======
   - {fileID: 773910025}
->>>>>>> origin/Li_Timer
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
