@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour {
     private Vector2 initialPosition;
     private Rigidbody2D rigidbody;
     private Animator anim;
+    private Attack attfn;
 
 // MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
@@ -26,6 +27,7 @@ public class PlayerMove : MonoBehaviour {
     void Start()
     {
         anim = GetComponent<Animator>();
+        attfn = GetComponentInChildren<Attack>();
     }
 
 	void Update ()
@@ -35,9 +37,7 @@ public class PlayerMove : MonoBehaviour {
         yInputValue = Input.GetAxisRaw("Vertical");
         anim.SetFloat("SpeedX", xInputValue);
         anim.SetFloat("SpeedY", yInputValue);
-        Debug.Log("Hi" + Timer.timeLeft);
-        
-
+        // Debug.Log("Hi" + Timer.timeLeft);
     }
 
     private void FixedUpdate()
@@ -50,10 +50,6 @@ public class PlayerMove : MonoBehaviour {
             Move();
         }
             
-            
-
-       
-        
         float xLastInput = Input.GetAxisRaw("Horizontal");
         float yLastInput = Input.GetAxisRaw("Vertical");
         if(xLastInput != 0 || yLastInput != 0){
@@ -93,6 +89,26 @@ public class PlayerMove : MonoBehaviour {
     private void TransformBack()
     {
         rigidbody.MovePosition(initialPosition);
+    }
+
+    private void CallLunging()
+    {
+        attfn.lungeevent = true;
+    }
+
+    private void CallThrowing()
+    {
+        attfn.throwevent = true;
+    }
+
+    private void StopLunging(){
+        // anim.SetBool("Lunging", false);
+        attfn.lungeevent = false;
+    }
+
+    private void StopThrowing(){
+        // anim.SetBool("Throwing", false);
+        attfn.throwevent = false;
     }
 
 }

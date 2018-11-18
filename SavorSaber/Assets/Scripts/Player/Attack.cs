@@ -42,6 +42,8 @@ public class Attack : MonoBehaviour {
     private float spearPower;
 	private float spearLevel = 0;
     private bool longThrow = false; //whether RMB skewers or throws
+    public bool throwevent = false; 
+    public bool lungeevent = false;
 
 // MONOBEHAVIOR FUNCTIONS -------------------------------------------------------------------------
 
@@ -54,7 +56,7 @@ public class Attack : MonoBehaviour {
         targetController = GetComponent<TargetController>();
         slashCollider = GetComponent<CircleCollider2D>();
         spearCollider = spear.GetComponent<CapsuleCollider2D>();
-        // anim = GetComponent<Animator>();
+        spearRenderer.enabled = false;
     }
 
     void Awake() {
@@ -71,9 +73,8 @@ public class Attack : MonoBehaviour {
 
     void stab()
     {
-        
         Vector3 thrust = new Vector3(0, stabSpeed, 0);
-
+        
         //increase throw power while fire2 is held down
         if(Input.GetButton("Fire2") && !slashing && !stabbing)
         {
@@ -106,7 +107,7 @@ public class Attack : MonoBehaviour {
         //either stab or throw on release
         if(Input.GetButtonUp("Fire2") && !slashing && !stabbing)
         {
-            if (spearPower > stabDistance) { print("throw"); otheranim.SetBool("Throwing", true); longThrow = true; }
+            if (spearPower > stabDistance) { longThrow = true; otheranim.SetBool("Throwing", true); }
             else                { longThrow = false; otheranim.SetBool("Lunging", true); }
 
             //print("right click");
@@ -114,9 +115,6 @@ public class Attack : MonoBehaviour {
 
             //get the starting position of spear when beginning a new stab action
             spearStart = spear.transform.localPosition;
-            print("what");
-            print(spearStart);
-            print("test");
 			AudioPlayer.main.playSFX("sfx_throw");
 			spearLevel = 0;
         }
@@ -124,44 +122,45 @@ public class Attack : MonoBehaviour {
         //short stab
         if (stabbing && !longThrow)
         {
-            otheranim.SetBool("Lunging", true);
-            spear.transform.Translate(thrust * Time.deltaTime);
+            if(lungeevent == true){
+                spear.transform.Translate(thrust * Time.deltaTime);
 
-            //enable collision trigger
-            spearCollider.enabled = true;
+                //enable collision trigger
+                spearCollider.enabled = true;
 
-            //stop stab if gone far enough
-            if(spear.transform.localPosition.y > spearStart.y + stabDistance)
-            {
-                stabbing = false;
-                spear.transform.localPosition = spearStart;
+                //stop stab if gone far enough
+                if(spear.transform.localPosition.y > spearStart.y + stabDistance)
+                {
+                    stabbing = false;
+                    spear.transform.localPosition = spearStart;
 
-                //reset spear power
-                spearPower = 0;
+                    //reset spear power
+                    spearPower = 0;
 
-                //disable trigger
-                spearCollider.enabled = false;
-                otheranim.SetBool("Lunging", false);
+                    //disable trigger
+                    spearCollider.enabled = false;
+                    otheranim.SetBool("Lunging", false);
+                }
             }
         }
         //long throw
         else if(stabbing && longThrow)
         {
-            otheranim.SetBool("Throwing", true);
-            spearRenderer.enabled = true;
-            spear.transform.Translate(thrust * Time.deltaTime);
+            if(throwevent == true){
+                spearRenderer.enabled = true;
+                spear.transform.Translate(thrust * Time.deltaTime);
 
-            //stop stab if gone far enough
-            if (spear.transform.localPosition.y > spearStart.y + spearPower)
-            {
-                stabbing = false;
-                spear.transform.localPosition = spearStart;
-                spearRenderer.enabled = false;
+                //stop stab if gone far enough
+                if (spear.transform.localPosition.y > spearStart.y + spearPower)
+                {
+                    stabbing = false;
+                    spear.transform.localPosition = spearStart;
+                    spearRenderer.enabled = false;
 
-
-                //reset spear power
-                spearPower = 0;
-                otheranim.SetBool("Throwing", false);
+                    //reset spear power
+                    spearPower = 0;
+                    otheranim.SetBool("Throwing", false);
+                }
             }
         }
 
@@ -240,5 +239,4 @@ public class Attack : MonoBehaviour {
             collision.gameObject.active = false;
         }
     }
-
 }
