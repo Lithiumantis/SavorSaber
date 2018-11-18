@@ -1,24 +1,18 @@
 fileFormatVersion: 2
-guid: 829eed1a2b7fb144aa51fdcd223377ef
+guid: de2a0f9cc5f581340b58df175abb0fa9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: grasstile_0
-    21300002: grasstile_1
-    21300004: grasstile_2
-    21300006: grasstile_3
-    21300008: grasstile_4
-    21300010: grasstile_5
-    21300012: grasstile_6
-    21300014: grasstile_7
-    21300016: grasstile_8
-    21300018: grasstile_9
-    21300020: grasstile_10
-    21300022: grasstile_11
-    21300024: grasstile_12
-    21300026: grasstile_13
-    21300028: grasstile_14
-    21300030: grasstile_15
-    21300032: grasstile_16
+    21300000: Pear 1_0
+    21300002: Pear 1_1
+    21300004: Pear 1_2
+    21300006: Pear 1_3
+    21300008: Pear 1_4
+    21300010: Pear 1_5
+    21300012: Pear 1_6
+    21300014: Pear 1_7
+    21300016: Pear 1_8
+    21300018: Pear 1_9
+    21300020: Pear 1_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -59,7 +53,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -80,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,11 +95,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grasstile_0
+      name: Pear 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -115,17 +109,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1601b7566b8b7144481da09016449e9f
+      spriteID: edd634a31b0220f47b4d726b1d2a17d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_1
+      name: Pear 1_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -135,17 +129,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9073ce6ce00052740b4039c63277b526
+      spriteID: c7632255eb0169a4490fe2dd7347e16e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_2
+      name: Pear 1_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -155,96 +149,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 027da0026123f244c800386c04f4a5ea
+      spriteID: d1b7f0c628b0a724dbb65471af3d15b1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d519e31072941a409c01bf1f05cd56a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cb1d5528801832469225d598af5c156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50797f43369ee94479f5c862c45275a3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_6
+      name: Pear 1_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ae37da9319b58e44b845e14809ccbaa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_7
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 64
         width: 32
         height: 32
@@ -255,53 +169,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a883b626b8037484d86d144e5eef5f17
+      spriteID: 05e82cab3c403c348a3dd4cc9bd54cfa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eae36d44acaf27a46b9d86edcb8a98ce
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738199638b7e50244a0e68b546efaf9f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_10
+      name: Pear 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -315,13 +189,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d14278ed99e464d9cea4b1e1bae6f5
+      spriteID: 7ed804e4a392e0d4ab4f0e20216e5a30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_11
+      name: Pear 1_5
       rect:
         serializedVersion: 2
         x: 32
@@ -335,13 +209,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 992c553335487774c95483375e0af092
+      spriteID: a3a5abcc05440d143ae3667fe77f0e91
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_12
+      name: Pear 1_6
       rect:
         serializedVersion: 2
         x: 64
@@ -355,13 +229,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8feb53b2defc3c340b68867c24ecae6b
+      spriteID: c7e1bf24b0ec4a44888d54128d212dbe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_13
+      name: Pear 1_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3af7df4ab1deac4987bd1e908250146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pear 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -375,13 +269,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d496f6462fb9e7945846a126547dcaaf
+      spriteID: 4b7dae6ad5c1ed34bbd406ed522d4368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_14
+      name: Pear 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -395,13 +289,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb48a7b7ad88a474e827e1acb324868b
+      spriteID: 4ce635173decfda40a3d5b9b2d5dc399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_15
+      name: Pear 1_10
       rect:
         serializedVersion: 2
         x: 64
@@ -415,7 +309,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a38726fecbae0434a90d18701d58ab21
+      spriteID: b80f9fbb239313344952dedaf6a2f2da
       vertices: []
       indices: 
       edges: []
@@ -423,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 939749cee306e0d44b0e662b74c38c9d
+    spriteID: 0bb2efd831806ab43941cd7b828459be
     vertices: []
     indices: 
     edges: []

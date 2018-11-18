@@ -80,7 +80,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void Move()
     {
-        
+
         // I'm sorry for my temp hacky code -- Tina
         // this is just so soma doesn't move while attacking, bc then the animation looks weird
         if(anim.GetBool("Walking") && !anim.GetBool("Attacking") && !anim.GetBool("Lunging") && !anim.GetBool("Throwing")){

@@ -1,24 +1,17 @@
 fileFormatVersion: 2
-guid: 829eed1a2b7fb144aa51fdcd223377ef
+guid: fbeb92a454fc01e4189b9f5c8de85056
 TextureImporter:
   fileIDToRecycleName:
-    21300000: grasstile_0
-    21300002: grasstile_1
-    21300004: grasstile_2
-    21300006: grasstile_3
-    21300008: grasstile_4
-    21300010: grasstile_5
-    21300012: grasstile_6
-    21300014: grasstile_7
-    21300016: grasstile_8
-    21300018: grasstile_9
-    21300020: grasstile_10
-    21300022: grasstile_11
-    21300024: grasstile_12
-    21300026: grasstile_13
-    21300028: grasstile_14
-    21300030: grasstile_15
-    21300032: grasstile_16
+    21300000: Lychee 1_0
+    21300002: Lychee 1_1
+    21300004: Lychee 1_2
+    21300006: Lychee 1_3
+    21300008: Lychee 1_4
+    21300010: Lychee 1_5
+    21300012: Lychee 1_6
+    21300014: Lychee 1_7
+    21300016: Lychee 1_8
+    21300018: Lychee 1_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -59,7 +52,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -80,7 +73,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,11 +94,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grasstile_0
+      name: Lychee 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -115,17 +108,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1601b7566b8b7144481da09016449e9f
+      spriteID: d77f22a6d5d89b446a5ebe161f1dfb02
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_1
+      name: Lychee 1_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -135,17 +128,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9073ce6ce00052740b4039c63277b526
+      spriteID: f0dfe8321ab52554181e0627c0d485a0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_2
+      name: Lychee 1_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -155,96 +148,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 027da0026123f244c800386c04f4a5ea
+      spriteID: 0d520e211714c5b41a1ca3227784fcd6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d519e31072941a409c01bf1f05cd56a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cb1d5528801832469225d598af5c156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50797f43369ee94479f5c862c45275a3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_6
+      name: Lychee 1_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ae37da9319b58e44b845e14809ccbaa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_7
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 64
         width: 32
         height: 32
@@ -255,53 +168,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a883b626b8037484d86d144e5eef5f17
+      spriteID: 5c9a13617cf8513448b32dcd9bd6a7d4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eae36d44acaf27a46b9d86edcb8a98ce
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738199638b7e50244a0e68b546efaf9f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_10
+      name: Lychee 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -315,13 +188,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d14278ed99e464d9cea4b1e1bae6f5
+      spriteID: 9612e64b370c4ad4da8cf5c3b8fe42e0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_11
+      name: Lychee 1_5
       rect:
         serializedVersion: 2
         x: 32
@@ -335,13 +208,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 992c553335487774c95483375e0af092
+      spriteID: b818c49ffabd6c44a8405da8d596dfbe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_12
+      name: Lychee 1_6
       rect:
         serializedVersion: 2
         x: 64
@@ -355,13 +228,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8feb53b2defc3c340b68867c24ecae6b
+      spriteID: 6da863f9037051d44b2b35bfd326397d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_13
+      name: Lychee 1_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6a1a015b94146449d144d814220ab0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lychee 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -375,13 +268,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d496f6462fb9e7945846a126547dcaaf
+      spriteID: 2071ebadbd4cb9d42aa60d5df45588c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasstile_14
+      name: Lychee 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -395,27 +288,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb48a7b7ad88a474e827e1acb324868b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grasstile_15
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a38726fecbae0434a90d18701d58ab21
+      spriteID: 442eda6e72fd93943851fca22827a1ec
       vertices: []
       indices: 
       edges: []
@@ -423,7 +296,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 939749cee306e0d44b0e662b74c38c9d
+    spriteID: 92826c11ad092394baecf37708474b5d
     vertices: []
     indices: 
     edges: []
