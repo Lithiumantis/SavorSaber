@@ -91,6 +91,8 @@ public class PlayerMove : MonoBehaviour {
         rigidbody.MovePosition(initialPosition);
     }
 
+    // Hacky code for calling functions at the right time of an animation
+    // this is so extra I'm sorry
     private void CallLunging()
     {
         attfn.lungeevent = true;
