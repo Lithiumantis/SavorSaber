@@ -35,6 +35,7 @@ public class Attack : MonoBehaviour {
     Animator otheranim;
     private bool slashing = false;
     private bool stabbing = false;
+    private bool endSignalSent = false;
 
     //spear private variables
     private Vector3 spearStart; //has to be global right now for stab to work properly, otherwise they get reset every update loop
@@ -182,6 +183,7 @@ public class Attack : MonoBehaviour {
         //actually do stuff while slashing flag is set
         if (slashing)
         {
+            print("slashing");
             // anim.SetBool("Attacking", true);
             knifeRenderer.enabled = false;
             spearRenderer.enabled = false;
@@ -190,7 +192,12 @@ public class Attack : MonoBehaviour {
 
             slashVisual.transform.RotateAround(slashVisual.transform.position, -1 * slashVisual.transform.forward, Time.deltaTime * rotateSpeed);
 
-            StartCoroutine(executeAfterSeconds(0.35f));
+            //start the termination corouting if not already started
+            if (!endSignalSent)
+            {
+                StartCoroutine(executeAfterSeconds(0.35f));
+            }
+            
 
         }
         yield return null;
@@ -199,16 +206,21 @@ public class Attack : MonoBehaviour {
     //sub-routine for delay when slashing
     IEnumerator executeAfterSeconds(float time)
     {
-        yield return new WaitForSeconds(time);
+        endSignalSent = true;
 
+        yield return new WaitForSeconds(time);
+        
         slashing = false;
         targetController.slashing = false;
 
         //knifeRenderer.enabled = true;
-        spearRenderer.enabled = true;
+        // spearRenderer.enabled = true;
         //slashRenderer.enabled = false;
         slashCollider.enabled = false;
         otheranim.SetBool("Attacking", false);
+        print("slashing end");
+
+        endSignalSent = false;
 
         yield return null;
     }
