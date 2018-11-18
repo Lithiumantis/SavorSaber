@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour {
     //private variables
     private float xInputValue;
     private float yInputValue;
+    private Vector2 initialPosition;
     private Rigidbody2D rigidbody;
     private Animator anim;
 
@@ -18,6 +19,8 @@ public class PlayerMove : MonoBehaviour {
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        initialPosition = rigidbody.position;
+
     }
 
     void Start()
@@ -32,12 +35,25 @@ public class PlayerMove : MonoBehaviour {
         yInputValue = Input.GetAxisRaw("Vertical");
         anim.SetFloat("SpeedX", xInputValue);
         anim.SetFloat("SpeedY", yInputValue);
+        Debug.Log("Hi" + Timer.timeLeft);
+        
 
     }
 
     private void FixedUpdate()
     {
-        Move();
+        if (Timer.timeLeft < 0.2)
+        {
+            TransformBack();
+        }else if (Timer.timeLeft > 0.5)
+        {
+            Move();
+        }
+            
+            
+
+       
+        
         float xLastInput = Input.GetAxisRaw("Horizontal");
         float yLastInput = Input.GetAxisRaw("Vertical");
         if(xLastInput != 0 || yLastInput != 0){
@@ -73,4 +89,10 @@ public class PlayerMove : MonoBehaviour {
         }
        
     }
+
+    private void TransformBack()
+    {
+        rigidbody.MovePosition(initialPosition);
+    }
+
 }
