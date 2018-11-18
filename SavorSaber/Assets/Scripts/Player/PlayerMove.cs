@@ -37,13 +37,7 @@ public class PlayerMove : MonoBehaviour {
         yInputValue = Input.GetAxisRaw("Vertical");
         anim.SetFloat("SpeedX", xInputValue);
         anim.SetFloat("SpeedY", yInputValue);
-<<<<<<< HEAD
         // Debug.Log("Hi" + Timer.timeLeft);
-=======
-        //Debug.Log("Hi" + Timer.timeLeft);
-        
-
->>>>>>> c596df64776f6163acc965dd44c925bed394be39
     }
 
     private void FixedUpdate()
