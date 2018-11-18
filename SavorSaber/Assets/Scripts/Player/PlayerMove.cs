@@ -80,10 +80,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void Move()
     {
-        //create new vector from input, move sprite along that vector
-        Vector2 movement = new Vector2(xInputValue * speed, yInputValue * speed);
-        rigidbody.MovePosition(rigidbody.position + movement);
-
+        
         // I'm sorry for my temp hacky code -- Tina
         // this is just so soma doesn't move while attacking, bc then the animation looks weird
         if(anim.GetBool("Walking") && !anim.GetBool("Attacking") && !anim.GetBool("Lunging") && !anim.GetBool("Throwing")){
