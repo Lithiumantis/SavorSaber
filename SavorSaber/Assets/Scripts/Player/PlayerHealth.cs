@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
+    public static bool isDead;
+
     public int maxHealth = 10;
     public int health;
 
@@ -14,7 +16,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
-
+        isDead = false;
         //use this to test healing mechanics 
         health = 5;
         UpdateUI();
@@ -43,6 +45,7 @@ public class PlayerHealth : MonoBehaviour {
     public void Die()
     {
         Debug.Log("Player dead");
+        isDead = true;
 
         //whatever we want to happen on death. Animations, etc. Respawn? 
     }
