@@ -97,9 +97,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 30
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,7 +107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de1db71085dae549aedc3b35fb8b9bb
+      spriteID: f6f8ee22815b73d4cbc3d78c84d36f39
       vertices: []
       indices: 
       edges: []
@@ -116,10 +116,10 @@ TextureImporter:
       name: dragonfruitIdle_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 30
-        width: 32
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c3d6e55dd45284da41eb670c152224
+      spriteID: 3a8ff3191fb0167419056390379e0d00
       vertices: []
       indices: 
       edges: []
@@ -136,10 +136,10 @@ TextureImporter:
       name: dragonfruitIdle_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 30
-        width: 32
-        height: 32
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,7 +147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fe58b5009d1a434da600cec31e5a480
+      spriteID: 07efe7833addf82499d8e176509b4911
       vertices: []
       indices: 
       edges: []
@@ -156,10 +156,10 @@ TextureImporter:
       name: dragonfruitIdle_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 30
-        width: 32
-        height: 32
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,7 +167,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a441c51bf6a914191ae2a77e0af3ab
+      spriteID: bfe374c735f38dc47a40c3fe7045b3cd
       vertices: []
       indices: 
       edges: []
@@ -176,90 +176,10 @@ TextureImporter:
       name: dragonfruitIdle_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6beb6ee8bb203ed4eaa4c53e76e12b05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitIdle_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c76cb59e106262e478a955107da06e9f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitIdle_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5db06b599e4d94d408aa7cc912096965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitIdle_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 056a82738706851489ccb2850cc572f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitIdle_8
-      rect:
-        serializedVersion: 2
         x: 256
-        y: 30
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 941525c513ce9904aad70a2a5a583dee
+      spriteID: 58e629593d2a4e2488de44a5986521e3
       vertices: []
       indices: 
       edges: []

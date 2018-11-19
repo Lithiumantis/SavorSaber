@@ -97,9 +97,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 30
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,7 +107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3efd3a98528bca40834c3a60e077cfc
+      spriteID: 32a95875142673049a7742c682301c13
       vertices: []
       indices: 
       edges: []
@@ -116,10 +116,10 @@ TextureImporter:
       name: dragonfruitWalk_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 30
-        width: 32
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4537443f4a612f49a7a824ed4bb1ff2
+      spriteID: b1674e6ac6c9e544bbd98a77d7899697
       vertices: []
       indices: 
       edges: []
@@ -136,10 +136,10 @@ TextureImporter:
       name: dragonfruitWalk_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 30
-        width: 32
-        height: 32
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,7 +147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4784b4e319e4f64d840c4204575515e
+      spriteID: 77595db0689ad7f45bb2f4f48c5bc6a2
       vertices: []
       indices: 
       edges: []
@@ -156,10 +156,10 @@ TextureImporter:
       name: dragonfruitWalk_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 30
-        width: 32
-        height: 32
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,7 +167,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55a20fd8e8d1eaa4cabc71bd0b1d9692
+      spriteID: 012d6298ee771e244984d814a3584917
       vertices: []
       indices: 
       edges: []
@@ -176,90 +176,10 @@ TextureImporter:
       name: dragonfruitWalk_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57d20cc021314d4449ca504005a60492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitWalk_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff8db95c5a2e6a74992d7dca05fffca5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitWalk_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35aaa2b67a1b2d340b1f38f5898eb033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitWalk_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 775e18b69915a2e4eabec3299eceaeee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dragonfruitWalk_8
-      rect:
-        serializedVersion: 2
         x: 256
-        y: 30
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398af2fa81469994b930cfe92a108ade
+      spriteID: e1a7df85f6864cd4985bc3d0877bcdd9
       vertices: []
       indices: 
       edges: []
