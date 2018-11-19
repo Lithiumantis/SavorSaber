@@ -1,27 +1,27 @@
 fileFormatVersion: 2
-guid: 3329f981544063c438e07247a1c44e8c
+guid: b06326afb1b842e4daddb4e5d8c607f0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dragonfruitIdle_0
-    21300002: dragonfruitIdle_1
-    21300004: dragonfruitIdle_2
-    21300006: dragonfruitIdle_3
-    21300008: dragonfruitIdle_4
-    21300010: dragonfruitIdle_5
-    21300012: dragonfruitIdle_6
-    21300014: dragonfruitIdle_7
-    21300016: dragonfruitIdle_8
-    21300018: dragonfruitIdle_9
-    21300020: dragonfruitIdle_10
-    21300022: dragonfruitIdle_11
-    21300024: dragonfruitIdle_12
-    21300026: dragonfruitIdle_13
-    21300028: dragonfruitIdle_14
-    21300030: dragonfruitIdle_15
-    21300032: dragonfruitIdle_16
-    21300034: dragonfruitIdle_17
-    21300036: dragonfruitIdle_18
-    21300038: dragonfruitIdle_19
+    21300000: dragonfruitWalking_0
+    21300002: dragonfruitWalking_1
+    21300004: dragonfruitWalking_2
+    21300006: dragonfruitWalking_3
+    21300008: dragonfruitWalking_4
+    21300010: dragonfruitWalking_5
+    21300012: dragonfruitWalking_6
+    21300014: dragonfruitWalking_7
+    21300016: dragonfruitWalking_8
+    21300018: dragonfruitWalking_9
+    21300020: dragonfruitWalking_10
+    21300022: dragonfruitWalking_11
+    21300024: dragonfruitWalking_12
+    21300026: dragonfruitWalking_13
+    21300028: dragonfruitWalking_14
+    21300030: dragonfruitWalking_15
+    21300032: dragonfruitWalking_16
+    21300034: dragonfruitWalking_17
+    21300036: dragonfruitWalking_18
+    21300038: dragonfruitWalking_19
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dragonfruitIdle_0
+      name: dragonfruitWalking_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,13 +118,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1430d3708bab542afda6a49ea88e0e
+      spriteID: ff98614c516c57c41be3cc294d370943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_1
+      name: dragonfruitWalking_1
       rect:
         serializedVersion: 2
         x: 32
@@ -138,13 +138,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2803f07bcb25c744bb102827bc577288
+      spriteID: e342ad2d87fa8804f97a2a507bfceb54
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_2
+      name: dragonfruitWalking_2
       rect:
         serializedVersion: 2
         x: 64
@@ -158,13 +158,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3649e7030e0e04ca97d8c099e694e7
+      spriteID: d14d29b00fa04624b933fde2756265e0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_3
+      name: dragonfruitWalking_3
       rect:
         serializedVersion: 2
         x: 96
@@ -178,13 +178,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a20d5e082c4452e4eae1602457644b29
+      spriteID: 4e238911ce18bea4fa39c744b76134cf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_4
+      name: dragonfruitWalking_4
       rect:
         serializedVersion: 2
         x: 128
@@ -198,13 +198,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b76dec69eb76a484a88333705f0955e3
+      spriteID: 14aa19a2e65f95b41a4c8dda08d3a60d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_5
+      name: dragonfruitWalking_5
       rect:
         serializedVersion: 2
         x: 160
@@ -218,13 +218,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ba5e75b5326dd4ea07063994c85135
+      spriteID: bff11d84af419c44caae73c963d6c799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_6
+      name: dragonfruitWalking_6
       rect:
         serializedVersion: 2
         x: 192
@@ -238,13 +238,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5979edb3a00b9f43b4b95a52b2cff1f
+      spriteID: 757687786872e2e419c461de97ab2082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_7
+      name: dragonfruitWalking_7
       rect:
         serializedVersion: 2
         x: 224
@@ -258,13 +258,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14b2cf2d15059e344a673ea0c0559d26
+      spriteID: b8a1e576720c58a418503344a4400b1a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_8
+      name: dragonfruitWalking_8
       rect:
         serializedVersion: 2
         x: 256
@@ -278,13 +278,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2927b196f9fe0714dad70c30dc44322c
+      spriteID: e12619fd1a5700e48b28f8cc5d25f007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_9
+      name: dragonfruitWalking_9
       rect:
         serializedVersion: 2
         x: 288
@@ -298,13 +298,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f7206cecbcaff459c21299eeef8472
+      spriteID: 0fbd85b23145c944b89ede6a95ea676a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_10
+      name: dragonfruitWalking_10
       rect:
         serializedVersion: 2
         x: 0
@@ -318,13 +318,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47aa0eded6bdd0d45aa0426553c0ba33
+      spriteID: 1cbeeb8d1e067a847a5eed3fc0242423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_11
+      name: dragonfruitWalking_11
       rect:
         serializedVersion: 2
         x: 32
@@ -338,13 +338,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 421c3d501aded7e4da3e3815041f8f21
+      spriteID: 92017d722fd4b744fa04009fec49722d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_12
+      name: dragonfruitWalking_12
       rect:
         serializedVersion: 2
         x: 64
@@ -358,13 +358,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e3f38ab8bf3a684fa13b217bc7b3e49
+      spriteID: 7dd04ade9ee53c743b63d128dd851111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_13
+      name: dragonfruitWalking_13
       rect:
         serializedVersion: 2
         x: 96
@@ -378,13 +378,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c53a2f112ba11142b9e43d92ae0c2d6
+      spriteID: 6a45147ba95f9eb4593bff45ab3adde2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_14
+      name: dragonfruitWalking_14
       rect:
         serializedVersion: 2
         x: 128
@@ -398,13 +398,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055c3b8ea9ed7da44b6ff8cbbb500522
+      spriteID: 9aff7b05c9d8c6743b5d6a44354c4cbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_15
+      name: dragonfruitWalking_15
       rect:
         serializedVersion: 2
         x: 160
@@ -418,13 +418,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5191a6b3661bc314bb72731e390888ff
+      spriteID: 7657949afb06b2c40860e5d8d1b25159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_16
+      name: dragonfruitWalking_16
       rect:
         serializedVersion: 2
         x: 192
@@ -438,13 +438,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8116f5a29d6b5354f9da65f5294da89f
+      spriteID: 1064ee32bfa455c4592500a2148d0af6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_17
+      name: dragonfruitWalking_17
       rect:
         serializedVersion: 2
         x: 224
@@ -458,13 +458,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b41a929809dcd4cbb2b16536f555b6
+      spriteID: 603cea20425e5a942b12a48bd95bcb9d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_18
+      name: dragonfruitWalking_18
       rect:
         serializedVersion: 2
         x: 256
@@ -478,13 +478,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6931ce848bf5b4642a31cab873c0b01a
+      spriteID: f6b53381557ac994481caf0e2bf4dff0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dragonfruitIdle_19
+      name: dragonfruitWalking_19
       rect:
         serializedVersion: 2
         x: 288
@@ -498,7 +498,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f8732b9b613094fa0ebcbfa12ac801
+      spriteID: 83b879138c722444fa6c32323ce8fbc0
       vertices: []
       indices: 
       edges: []
@@ -506,7 +506,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 58f8af87a03c80f46a2b2a45150c1535
+    spriteID: 371f0c0a9b9b3fe4fad2e7868cae8273
     vertices: []
     indices: 
     edges: []
