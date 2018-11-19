@@ -11,6 +11,17 @@ TextureImporter:
     21300012: dragonfruitIdle_6
     21300014: dragonfruitIdle_7
     21300016: dragonfruitIdle_8
+    21300018: dragonfruitIdle_9
+    21300020: dragonfruitIdle_10
+    21300022: dragonfruitIdle_11
+    21300024: dragonfruitIdle_12
+    21300026: dragonfruitIdle_13
+    21300028: dragonfruitIdle_14
+    21300030: dragonfruitIdle_15
+    21300032: dragonfruitIdle_16
+    21300034: dragonfruitIdle_17
+    21300036: dragonfruitIdle_18
+    21300038: dragonfruitIdle_19
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -195,7 +206,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e85f15d3116b2fb4ab434c6182cb957c
+    spriteID: 58f8af87a03c80f46a2b2a45150c1535
     vertices: []
     indices: 
     edges: []
